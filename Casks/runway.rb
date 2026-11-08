@@ -4,11 +4,11 @@ cask "runway" do
     run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/runway"]
   end
 
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     depends_on arch: :arm64
-    sha256 "895a3a33c6df9bf5529031a6a3275d0779b7f634da4a49453f1a280a25dab73a"
+    sha256 "7d96d0bda0c3ccb6a5b52b5d28053dde54c58fb64a3d55d6ca5837188f3ca15f"
     url "https://github.com/stefankn/runway/releases/download/v#{version}/runway_#{version}_darwin_arm64.tar.gz"
   end
 
